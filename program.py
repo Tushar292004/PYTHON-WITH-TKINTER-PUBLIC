@@ -1,6 +1,8 @@
+#CREATED BY : TUSHAR CHANDAK
+#CONTACT : tusharchandak2004@gmail.com or 9827156739
+
 from tkinter import *
-
-
+#nacked functioning 
 def button_click(event):
     global numbers
     text = event.widget.cget("text")
@@ -30,7 +32,7 @@ def button_click(event):
 
 
 window = Tk()
-window.iconbitmap('D:\movies\Pelfusion-Folded-Flat-Calculator.ico')
+window.iconbitmap('D:\movies\Pelfusion-Folded-Flat-Calculator.ico') #remove this code is you don't have the icon for calculator 
 window.geometry("408x412")
 window.title("CALCULATOR")
 window.config(bg="grey")
