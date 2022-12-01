@@ -1,8 +1,11 @@
 #CREATED BY : TUSHAR CHANDAK
 #CONTACT : tusharchandak2004@gmail.com or 9827156739
 
+
+
 from tkinter import *
-#nacked functioning 
+
+
 def button_click(event):
     global numbers
     text = event.widget.cget("text")
@@ -70,7 +73,7 @@ button8 = Button(window, text="8", font="25", padx=39, pady=16, bg="light grey")
 button8.bind("<Button-1>", button_click)
 button9 = Button(window, text="9", font="25", padx=39, pady=16, bg="light grey")
 button9.bind("<Button-1>", button_click)
-button0 = Button(window, text="0", font="25", padx=37, pady=16, bg="light grey")
+button0 = Button(window, text="0", font="25", padx=38, pady=16, bg="light grey")
 button0.bind("<Button-1>", button_click)
 
 #operators
@@ -78,7 +81,7 @@ buttonl = Button(window, text="(", font="lucida 16", padx=40, pady=15, bg="grey"
 buttonl.bind("<Button-1>", button_click)
 buttonr = Button(window, text=")", font="lucida 16", padx=40, pady=15, bg="grey")
 buttonr.bind("<Button-1>", button_click)
-buttondot = Button(window, text=".", font="lucida 15", padx=39, pady=16, bg="grey")
+buttondot = Button(window, text=".", font="lucida 15", padx=43, pady=16, bg="grey")
 buttondot.bind("<Button-1>", button_click)
 buttona = Button(window, text="+", font="lucida 16", padx=36, pady=15, bg="grey")
 buttona.bind("<Button-1>", button_click)
@@ -88,9 +91,9 @@ buttonm = Button(window, text="x", font="25", padx=40, pady=16, bg="grey")
 buttonm.bind("<Button-1>", button_click)
 buttond = Button(window, text="/", font="lucida 16", padx=39, pady=15, bg="grey")
 buttond.bind("<Button-1>", button_click)
-buttonc = Button(window, text="C", font="lucida 16", padx=34,pady=49, bg="grey")
+buttonc = Button(window, text="C", font="lucida 16", padx=37,pady=49, bg="grey")
 buttonc.bind("<Button-1>", button_click)
-buttone = Button(window, text="=", font="25", padx=36, pady=50, bg="grey")
+buttone = Button(window, text="=", font="25",padx=40, pady=16, bg="grey")
 buttone.bind("<Button-1>", button_click)
 
 
@@ -100,8 +103,8 @@ buttone.bind("<Button-1>", button_click)
 
 #operators
 buttond.grid(row=5, column=0)
-buttonc.grid(row=1, column=3, rowspan=2)
-buttone.grid(row=3, column=3, rowspan=2)
+buttonc.grid(row=2, column=3, rowspan=2)
+buttone.grid(row=4, column=3)
 buttona.grid(row=4, column=0)
 buttons.grid(row=4, column=1)
 buttonm.grid(row=4, column=2)
@@ -119,7 +122,7 @@ button6.grid(row=2, column=2)
 button7.grid(row=1, column=0)
 button8.grid(row=1, column=1)
 button9.grid(row=1, column=2)
-button0.grid(row=1, column=0)
+button0.grid(row=1, column=3)
 
 
 
